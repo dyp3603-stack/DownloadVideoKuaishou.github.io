@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kuaishou Downloader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <div class="logo">K</div>
+    <h1>Kuaishou Downloader</h1>
+    <p class="sub">Download videos you have permission to use.</p>
+    <form id="form">
+      <label for="url">Kuaishou video URL</label>
+      <div class="row">
+        <input id="url" type="url" placeholder="Paste Kuaishou link here..." required>
+        <button id="btn" type="submit">Get Video</button>
+      </div>
+    </form>
+    <div id="status" class="status"></div>
+    <div id="result" class="result hidden">
+      <div class="preview">
+        <img id="thumb" alt="Video thumbnail">
+        <div>
+          <h2 id="title">Video</h2>
+          <p id="meta"></p>
+        </div>
+      </div>
+      <a id="download" class="download" href="#" target="_blank" rel="noopener">Download MP4</a>
+    </div>
+    <p class="note">Only use this tool for content you are authorized to download.</p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
